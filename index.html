@@ -3,33 +3,22 @@
     <style>
         body{
             background-color: black;
+            min-height: 150vh;
         }
 
-        .pageOptions{
-            text-align: right;
-            margin: -10px;
-            padding: 10px;
-            background-color: rgb(175, 219, 219);
+        #navbar{
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            width: 100%;
+            background-color: #CCFFFF;
         }
 
-        .options{
-            color: black;
+        nav li{
+            display: inline;
             margin-right: 20px;
-        }
-
-        .options:hover{
-            color: white;
-        }
-
-        .introName{
             position: relative;
-            font-size: 20px;
-            right: 700px;
-            color: black;
-        }
-
-        .introName:hover{
-            color: white;
+            left: 80%;
         }
 
         .content{
@@ -38,8 +27,63 @@
             font-weight: 800;
             font-family: monospace;
             margin-left: 100px;
-            padding-top: 200px;
+            padding-top: 250px;
             line-height: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        a:hover{
+            color: white;
+        }
+
+        .box{
+            border-width: 1px;
+            border-style: solid;
+            border-color: #CCFFFF;
+            background-color: #aae7e7;
+            width: 300px;
+            height: 150px;
+            margin:auto;
+            margin-top: 500px;
+            border-radius: 5px;
+            padding-top: 20px;
+        }
+
+        #thumbnail{
+            /*box-shadow: 0 10px 20px rgba(255, 255, 255, 0.19), 0 6px 6px rgba(255, 255, 255, 0.23);*/
+            box-shadow: 0px 0px 15px 7px gray;
+        }
+
+        .search{
+            text-align: center;
+        }
+
+        /*footer{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+            background-color:rgb(175, 219, 219);
+            padding: 0.5em;
+            text-align: center;
+            margin-top: 200px;
+        }*/
+
+        .moon{
+            position: relative;
+            float: right;
+            right: 400px;
+            background-color: transparent;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 25px 10px 5px 0px white;
         }
     </style>
 
@@ -48,21 +92,36 @@
     </head>
 
     <body>
-        <div class="firstPage">
+        <div class="firstPage" id="pageOne">
             <div class="pageOptions">
-                <h4>
-                    <a href="#" class="introName">JoyHere</a>
-                    <a href="#" class="options">Home</a>
-                    <a href="#" class="options">Education</a>
-                    <a href="#" class="options">Works</a>
-                    <a href="#" class="options">Contact</a>
-                </h4>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="#pageOne">Home</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#pageTwo">Works</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="content">
-                <p>I'm <strong style="color: rgb(175, 219, 219);">Achuyat Saha Joy</strong>.</p>
+                <div class="moon"></div>
+                <p>I'm <strong style="color: #CCFFFF;">Achuyat Saha Joy</strong>.</p>
                 <p>A front-end designer to make things easier.</p>
-                
             </div>
         </div>
+        <div class="secondPgae" id=pageTwo>
+            <div class="box" id="thumbnail">
+                <div>
+                    <section class="search">
+                        <form>
+                            <label for="searchbar">Search:</label>
+                            <input id="searchbar" type="search" name="search">
+                            <input type="submit" value="GO!" name="Submit">
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer>&copy; Achuyat Saha Joy</footer>
     </body>
 </html>
