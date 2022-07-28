@@ -1,127 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        body{
-            background-color: black;
-            min-height: 150vh;
-        }
-
-        #navbar{
-            position: fixed;
-            right: 0px;
-            top: 0px;
-            width: 100%;
-            background-color: #CCFFFF;
-        }
-
-        nav li{
-            display: inline;
-            margin-right: 20px;
-            position: relative;
-            left: 80%;
-        }
-
-        .content{
-            color: white;
-            font-size: 30px;
-            font-weight: 800;
-            font-family: monospace;
-            margin-left: 100px;
-            padding-top: 250px;
-            line-height: 10px;
-        }
-
-        a{
-            text-decoration: none;
-            color: black;
-            font-size: 15px;
-            font-weight: 800;
-        }
-
-        a:hover{
-            color: white;
-        }
-
-        .box{
-            border-width: 1px;
-            border-style: solid;
-            border-color: #CCFFFF;
-            background-color: #aae7e7;
-            width: 300px;
-            height: 150px;
-            margin:auto;
-            margin-top: 500px;
-            border-radius: 5px;
-            padding-top: 20px;
-        }
-
-        #thumbnail{
-            /*box-shadow: 0 10px 20px rgba(255, 255, 255, 0.19), 0 6px 6px rgba(255, 255, 255, 0.23);*/
-            box-shadow: 0px 0px 15px 7px gray;
-        }
-
-        .search{
-            text-align: center;
-        }
-
-        /*footer{
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-            width: 100%;
-            background-color:rgb(175, 219, 219);
-            padding: 0.5em;
-            text-align: center;
-            margin-top: 200px;
-        }*/
-
-        .moon{
-            position: relative;
-            float: right;
-            right: 400px;
-            background-color: transparent;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            box-shadow: 25px 10px 5px 0px white;
-        }
-    </style>
-
-    <head>
-        <title>Demo website</title>
-    </head>
-
-    <body>
-        <div class="firstPage" id="pageOne">
-            <div class="pageOptions">
-                <nav id="navbar">
-                    <ul>
-                        <li><a href="#pageOne">Home</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#pageTwo">Works</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="content">
-                <div class="moon"></div>
-                <p>I'm <strong style="color: #CCFFFF;">Achuyat Saha Joy</strong>.</p>
-                <p>A front-end designer to make things easier.</p>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <title>Website</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div>
+            <h1>Achuyat Saha Joy</h1>
         </div>
-        <div class="secondPgae" id=pageTwo>
-            <div class="box" id="thumbnail">
-                <div>
-                    <section class="search">
-                        <form>
-                            <label for="searchbar">Search:</label>
-                            <input id="searchbar" type="search" name="search">
-                            <input type="submit" value="GO!" name="Submit">
-                        </form>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <footer>&copy; Achuyat Saha Joy</footer>
-    </body>
+    </main>
+</body>
 </html>
