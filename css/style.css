@@ -17,3 +17,39 @@ body{
     margin-top: 300px;
     background-color: rgb(255, 229, 196);
 }
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: rgb(183, 235, 183);
+}
+
+a:visited {
+    color: rgb(102, 102, 102);
+}
+
+.cv {
+    text-align: right;
+    font-weight: bold;
+    margin-right: 80px;
+    margin-top: 320px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 320px;
+ }
+
+ .blank {
+     width: 90%;
+     height: 20px;
+ }
+
+ .logo, .blank {
+     display: inline-block;
+ }
