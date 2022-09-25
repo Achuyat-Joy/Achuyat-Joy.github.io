@@ -1,0 +1,36 @@
+@media (max-width: 700px){
+    .intro{
+        h1{
+            padding: 0 100px;
+            font-size: 2rem;
+        }
+
+        p{
+            padding: 0 50px;
+            font-size: 1rem;
+        }
+    }
+
+    .navigation ul li a{
+        font-size: 2rem;
+    }
+
+    .projects{
+        li{
+            a{
+                font-size: 1em;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .logo{
+        bottom: 50px;
+        right: 50px;
+    }
+
+    .nightMoodButton{
+        top: 50px;
+        left: 50px;
+    }
+}
