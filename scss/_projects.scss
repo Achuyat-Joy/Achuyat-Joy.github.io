@@ -11,6 +11,14 @@
     flex-wrap: wrap;
     gap: 30px;
 
+    counter-reset: my-sec-counter;
+
+    .header .projectName h1::after {
+        /* Increment "my-sec-counter" by 1 */
+        counter-increment: my-sec-counter;
+        content: " " counter(my-sec-counter);
+      }
+
     .item{
         flex-basis: 350px;
         min-height: 220px;
@@ -30,7 +38,6 @@
         grid-template-columns: 70% 15% 15%;
         margin-bottom: 10px;
         align-items: center;
-
 
     }
 
