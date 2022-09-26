@@ -1,7 +1,10 @@
 @media (max-width: 700px){
     .intro{
+        top: 200px;
+        justify-content: flex-start;
+
         h1{
-            padding: 0 100px;
+            padding: 0 100px 10px 100px;
             font-size: 2rem;
         }
 
@@ -33,4 +36,39 @@
         top: 50px;
         left: 50px;
     }
+
+    .projects{
+        flex-direction: column;
+        margin: 150px 100px 100px 100px;;
+
+        .item{
+            flex-grow: 1;
+            height: auto;
+        }
+
+        .header{
+            grid-template-columns: 0% 20% 70%;
+            .projectName{
+                grid-column: 1/4;
+                margin-bottom: 20px;
+            }
+
+            .link1{
+                grid-column: 2/3;
+                grid-row: 2/3;
+                margin-bottom: 20px;
+            }
+
+            .link2{
+                grid-column: 3/4;
+                grid-row: 2/3;
+                margin-bottom: 20px;
+            }
+
+            h1{
+                margin-right: 0;
+            }
+        }
+    }
+
 }

@@ -9,4 +9,10 @@
     .navigation{
         background-color: $black;
     }
+
+    .projects{
+        .item{
+            border: 2px solid $white;
+        }
+    }
 }
