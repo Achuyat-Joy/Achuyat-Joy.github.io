@@ -1,7 +1,8 @@
 @media (max-width: 700px){
+
     .intro{
-        top: 200px;
-        justify-content: flex-start;
+        top: 0;
+        justify-content: center;
 
         h1{
             padding: 0 100px 10px 100px;
@@ -43,6 +44,7 @@
 
         .item{
             flex-grow: 1;
+            min-width: 200px;
             height: auto;
         }
 
